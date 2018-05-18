@@ -6,11 +6,11 @@ class ResultsList extends Component{
             <li key={this.props.id} className='list'>
                 <img src={this.props.val.img}></img>
                 <h3>Title: {this.props.val.title}</h3>
-                <p>Release Date: {this.props.val.releaseDate}  </p>
+                <p>Release Date: {this.props.val.releaseDate} </p>
             </li>
 
         )
     }
 }
 
-export default BillsList
+export default ResultsList
