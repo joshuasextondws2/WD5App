@@ -130,6 +130,9 @@ class Main extends Component {
                 this.refs.search.value= ''
 
             }
+            let currentResultsList = this.state.currentResultsList
+            currentResultsList.splice(0,'')
+            this.setState({currentResultsList: this.state.currentResultsList})
         })
     }
     render() {
@@ -215,7 +218,7 @@ const styles= {
     button:{
         fontSize:16,
         fontFamily: "Albertus",
-        backgroundColor:'#36648B',
+        backgroundColor:'#39558C',
         color:'whitesmoke',
         width: 130,
         height: 25,

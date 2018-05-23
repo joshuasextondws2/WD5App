@@ -17,7 +17,7 @@ export default Footer
 const styles= {
     footer: {
         display:'flex',
-        backgroundColor: '#36648B',
+        backgroundColor: '#39558C',
         flex: 1,
         flexDirection: 'row',
 
