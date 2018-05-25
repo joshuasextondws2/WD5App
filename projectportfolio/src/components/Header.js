@@ -28,7 +28,7 @@ const styles= {
         display:'flex',
         justifyContent:'center',
         marginBottom: '5rem',
-        
+
 
 
     },

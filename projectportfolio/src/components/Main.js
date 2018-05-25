@@ -15,18 +15,20 @@ class Main extends Component {
             }
         ],
     }
-/*
-    componentDidMount(key) {
+
+    componentDidMount() {
         if (localStorage.getItem('currentResultsList')) {
             let currentResultsList = JSON.parse(localStorage.getItem('currentResultsList'))
             this.setState({currentResultsList: currentResultsList})
         }
 
     }
-*/
+
     preformSearch=(e)=>{
         e.preventDefault()
         let currentResultsList = this.state.currentResultsList
+        currentResultsList.splice(0,12)
+        this.setState({currentResultsList: this.state.currentResultsList})
 
 
         if(this.refs.search.value===""){
@@ -39,7 +41,7 @@ class Main extends Component {
         }
        else if(this.refs.search.value === "adventure"){
             var api=
-                'https://api.themoviedb.org/3/genre/16/movies?api_key=9421c42ace1371c5ddd0d98cbe634bc0&language=en-US&include_adult=false&sort_by=created_at.desc'
+                'https://api.themoviedb.org/3/genre/12/movies?api_key=9421c42ace1371c5ddd0d98cbe634bc0&language=en-US&include_adult=false&sort_by=created_at.desc'
         }
        else if(this.refs.search.value === "drama"){
             var api=
@@ -126,13 +128,10 @@ class Main extends Component {
                 this.setState({releaseDate: data.results[i].release_date})
                 this.state.currentResultsList.push({'img': image, 'title': data.results[i].title, 'releaseDate': data.results[i].release_date })
                 this.setState({currentResultsList: this.state.currentResultsList})
-                localStorage.setItem('currentResultsList', JSON.stringify(currentResultsList))
-                this.refs.search.value= ''
+                this.refs.search.value = ''
 
             }
-            let currentResultsList = this.state.currentResultsList
-            currentResultsList.splice(0,'')
-            this.setState({currentResultsList: this.state.currentResultsList})
+            localStorage.setItem('currentResultsList', JSON.stringify(currentResultsList))
         })
     }
     render() {
