@@ -4,3 +4,32 @@ body {
   font-family: sans-serif;
   background-color: #ffffff;
 }
+
+@media screen and (max-width: 480px) {
+    blockquote{
+        font-size: 12px;
+    }
+    h2{
+        font-size: 16px;
+    }
+    footer p{
+        font-size: 12px;
+    }
+}
+@media screen and (min-width: 480px) {
+    blockquote{
+        font-size: 18px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    footer p{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    footer p{
+        font-size: 18px;
+    }
+}

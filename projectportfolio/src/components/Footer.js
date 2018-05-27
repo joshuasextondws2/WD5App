@@ -27,7 +27,7 @@ const styles= {
         width:'1500px',
         paddingBottom: '10',
         textAlign:'center',
-        fontSize: 20,
+        //fontSize: 20,
         paddingTop: 10,
         color: 'whitesmoke',
     }

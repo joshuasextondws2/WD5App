@@ -5,7 +5,7 @@ class Header extends Component{
     render(){
         return(
             <header style={styles.header}>
-                <h1 className="headline center" style={styles.h1}><img src={logo} style={styles.img} /></h1>
+                <h1 className="headline center" style={styles.h1}><img src={logo} style={styles.img} alt="logo" /></h1>
 
             </header>
 
@@ -18,7 +18,7 @@ export default Header
 const styles= {
     header: {
         backgroundColor: '#332D6B',
-       flex: 1,
+        flex: 1,
         flexDirection: 'row',
         height:400,
     },
@@ -28,15 +28,11 @@ const styles= {
         display:'flex',
         justifyContent:'center',
         marginBottom: '5rem',
-
-
-
     },
    img:{
         display:'flex',
         justifyContent:'center',
         flexGrow:1,
-        //width:500,
         height: 450,
         marginTop: 0,
         paddingTop:0,

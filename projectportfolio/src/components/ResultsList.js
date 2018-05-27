@@ -4,9 +4,10 @@ class ResultsList extends Component{
     render() {
         return (
             <li key={this.props.id} className='list' style={styles.li}>
-                <img src={this.props.val.img}></img>
+                <img src={this.props.val.img} alt='movie poster'></img>
                 <h3>Title: {this.props.val.title}</h3>
                 <p>Release Date: {this.props.val.releaseDate} </p>
+
             </li>
 
         )
@@ -21,8 +22,11 @@ const styles= {
         width: 300,
         height: 500,
         fontFamily:'Helvetica',
+        color:"#332D6B",
     },
+
     h3:{
        fontFamily:'Albertus',
     },
+
 }
