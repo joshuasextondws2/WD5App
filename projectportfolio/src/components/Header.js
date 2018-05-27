@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import logo from "../images/vhs.svg"
+import logo from "../images/vhs2.svg"
 
 class Header extends Component{
     render(){
@@ -33,7 +33,7 @@ const styles= {
         display:'flex',
         justifyContent:'center',
         flexGrow:1,
-        height: 450,
+        height: 420,
         marginTop: 0,
         paddingTop:0,
     },
